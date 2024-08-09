@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-color);
+  height: auto;
+  padding: 3rem 5rem;
+}
+
+li {
+  list-style-type: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+.active {
+  color: var(--purple-color) !important;
+  font-size: var(--font-18) !important;
+  font-weight: 700 !important;
+}
+
+:root {
+  --font-pacifico: "Pacifico", sans-serif;
+  --main-color: #090E16;
+  --purple-color: #7b4be2;
+  --white-color: #ffffff;
+  --purple-color-5: rgba(123, 75, 226, 0.05);
+  --purple-color-50: rgba(123, 75, 226, 0.5);
+  --white-color-5: rgba(255, 255, 255, 0.05);
+  --white-color-50: rgba(255, 255, 255, 0.5);
+  --opacity-50: 50%;
+  --opacity-5: 5%;
+  --font-12: 12px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-32: 32px;
+  --font-48: 48px;
+}
+
+
+/* Navbar  */
+.port-navbar {
+  background-color: var(--purple-color-5) !important;
+  border-radius: 16px;
+
+  & ul li a {
+    font-size: var(--font-18);
+    color: var(--white-color-50);
+    transition: all 0.3s linear;
+    transform-origin: center;
+  }
+
+  & ul li a:hover {
+    color: var(--purple-color) !important;
+    font-size: var(--font-18) !important;
+    font-weight: 700 !important;
+    transform: scale(1.02);
+  }
+}
+
+.port-title {
+  font-family: var(--font-pacifico);
+  color: var(--white-color);
+  font-size: var(--font-18);
+}
+
+
+
+
+
+/*----------  Media Query  ----------*/
+
+@media (max-width:575.98px)
+/* For Phones*/
+  {
+  .port-navbar {
+    display: none !important;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px)
+/* For Phones and Landscape*/
+  {
+  .port-navbar {
+    display: none !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px)
+/* For Tablets*/
+  {
+  .nav-icons-for-sm-devices {
+    display: none !important;
+  }
+}
+
+@media (min-width:992px)
+/* For Large Devices*/
+  {
+  .nav-icons-for-sm-devices {
+    display: none !important;
+  }
+}
