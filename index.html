@@ -17,80 +17,122 @@
 </head>
 
 <body>
-  <header class="mb-5">
-    <nav class="port-navbar navbar navbar-expand-lg navbar-light bg-light px-3 py-2">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
-        <a class="navbar-brand" href="#">
-          <p class="port-title">Yagya</p>
-        </a>
-        <div class="d-flex align-items-center justify-content-end">
-          <ul class=" d-flex gap-4 justify-content-end align-items-center m-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Showcase</a>
-            </li>
-            <li class="nav-item">
+  <header id="">
+    <section class="default-padding">
+      <nav class="port-navbar navbar navbar-expand-lg navbar-light bg-light px-5 pt-3">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <a class="navbar-brand" href="./index.html">
+            <p class="port-title">Yagya</p>
+          </a>
+          <div class="d-flex align-items-center justify-content-end">
+            <ul class=" d-flex gap-4 justify-content-end align-items-center m-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Showcase</a>
+              </li>
+              <!-- <li class="nav-item">
               <a class="nav-link" href="#">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
-            </li>
-          </ul>
+            </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </section>
+  </header>
+  <!-- social media icons for small device  -->
+  <section class="nav-icons-for-sm-devices mb-5">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <a class="icon-hover" href="https://www.linkedin.com/in/yagyaraj-majhi-0075b1235/" target="_blank">
+          <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn" height="35" width="35">
+        </a>
+        <a class="icon-hover" href="https://github.com/iamyrm" target="_blank">
+          <img src="./assets/images/icons/github.svg" alt="Github" height="45" width="45">
+        </a>
+        <a class="icon-hover" href="https://www.facebook.com/yagyaraj.majhi.1/" target="_blank">
+          <img src="./assets/images/icons/facebook.svg" alt="Facebook" height="35" width="35">
+        </a>
       </div>
-    </nav>
-    <!-- social media icons for small device  -->
-    <section class="nav-icons-for-sm-devices">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="d-flex justify-content-center gap-5">
-          <a href="#">
-            <img src="/assets/images/logo/logo.svg" alt="Logo" height="35" width="35">
-          </a>
-          <a href="#">
-            <img src="/assets/images/logo/logo.svg" alt="Logo" height="35" width="35">
-          </a>
-          <a href="#">
-            <img src="/assets/images/logo/logo.svg" alt="Logo" height="35" width="35">
-          </a>
+    </div>
+  </section>
+
+  <main>
+    <!-- ------------Hero Section------------ -->
+    <section class="">
+      <div class="default-padding container-fluid">
+        <div class="row">
+          <div class="hero-col-1 col-sm-12 col-md-4 d-flex flex-column mt-5">
+            <div class="text-center text-md-start">
+              <button class="button mb-5 mt-5">Hello There 👋</button>
+            </div>
+            <h1 class="h1 heading-1 mb-3 text-center text-md-start">Yagyaraj Majhi</h1>
+            <!-- <h1 class="h1 heading-1 mb-3">Majhi</h1> -->
+            <h2 class="para-1 h2 mb-5 text-center text-md-start">Frontend Developer・WordPress Developer</h2>
+            <div class="social-icons-in-desktop">
+              <a class="icon-hover" href="https://www.linkedin.com/in/yagyaraj-majhi-0075b1235/" target="_blank">
+                <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn" height="35" width="35">
+              </a>
+              <a class="icon-hover px-3" href="https://github.com/iamyrm" target="_blank">
+                <img src="./assets/images/icons/github.svg" alt="Github" height="45" width="45">
+              </a>
+              <a class="icon-hover" href="https://www.facebook.com/yagyaraj.majhi.1/" target="_blank">
+                <img src="./assets/images/icons/facebook.svg" alt="Facebook" height="35" width="35">
+              </a>
+            </div>
+          </div>
+          <div class="hero-col-2 col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="./assets/images/avatar.png" alt="Yagyaraj Majhi">
+          </div>
+
+          <div
+            class="hero-col-3 col-sm-12 col-md-4 justify-content-center d-flex flex-column align-items-start align-items-md-end ">
+            <div class="cv-download mb-3">
+              <a class="para-1" href="./assets/cv/cv.pdf" download style="  color: var(--purple-color);">Dowload CV</a>
+            </div>
+            <a href="mailto:majhiyagya123@example.com">
+              <button class="button-outline">Let's Chat ✉</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-  </header>
 
-  <main>
-    <!-- Hero Section  -->
-    <section class="mb-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <div class="row flex-column">
-              <div class="col 12 d-flex justify-content-start align-items-center">👋 Saudações!</div>
-              <div class="col 12 d-flex justify-content-start align-items-center">Yagyaraj Mahi</div>
-              <div class="col 12 d-flex justify-content-start align-items-center">Front-end developer · UI designer
-              </div>
-              <div class="col 12 d-flex justify-content-start align-items-center">Social media icons</div>
-            </div>
-          </div>
-          <div class="col-6 d-flex justify-content-center align-items-center">
-            <img src="assets/images/me.png" alt="Yagyaraj Majhi" height="550" width="550">
-          </div>
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <div class="row flex-column">
-              <div class="col 12 d-flex justify-content-start align-items-center">Download CV</div>
-              <div class="col 12 d-flex justify-content-start align-items-center">Lets talk</div>
-            </div>
-          </div>
-        </div>
+    <!-- Skills Section  -->
+    <section>
+
     </section>
   </main>
 
-  <footer>
-    <!--  -->
+  <div class="px-5 container-fluid">
+    <hr style="color: var(--white-color-50);">
+  </div>
+  <footer id="footer" class="footer container-fluid my-5">
+    <div class="row d-flex align-items-center px-5">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+        <p class="para-1 text-center m-0">Yagyaraj Majhi | Frontend Developer・WordPress Developer</p>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+        <div class="d-flex gap-3 align-items-center">
+          <a class="icon-hover" href="https://www.linkedin.com/in/yagyaraj-majhi-0075b1235/" target="_blank">
+            <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn" height="35" width="35">
+          </a>
+          <a class="icon-hover" href="https://github.com/iamyrm" target="_blank">
+            <img src="./assets/images/icons/github.svg" alt="Github" height="45" width="45">
+          </a>
+          <a class="icon-hover" href="https://www.facebook.com/yagyaraj.majhi.1/" target="_blank">
+            <img src="./assets/images/icons/facebook.svg" alt="Facebook" height="35" width="35">
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
